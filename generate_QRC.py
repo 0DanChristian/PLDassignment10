@@ -53,6 +53,6 @@ logo_display.thumbnail((180, 180)) # Aspect Ratio of the imported PNG File.
 logo_pos = ((icon.size[0] - logo_display.size[0]) // 2, (icon.size[1] - logo_display.size[1]) // 2) # Image Size Presets has been customized.
 icon.paste(logo_display, logo_pos) # PNG is displayed through the "icon" global variable.
 # The QR code will be saved from its Python Settings upon the dictation of the naming file.
-icon.save('DAN QRC.png')
+icon.save('DAN_QRC.png')
 
 # with Villariza's guide in this code I was able to understand generating QRC using python :>>
