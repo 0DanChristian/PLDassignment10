@@ -44,10 +44,10 @@ def record_scan(icon):
         hour_clock = 12
         with open(details, "w", encoding="utf-8") as update:
             if timezoneNUM >= 0 and timezoneNUM < hour_clock:
-                update.write(TxtBCHFile + (f"\n\n>>> RECORD OF SCANS <<< \nDate Tracking Record: {datezone}\nTime Tracking Record: {timezone} AM"))
+                update.write(TxtBCHFile + (f"\n\n--- RECORD OF SCANS --- \nDate Tracking Record: {datezone}\nTime Tracking Record: {timezone} AM"))
             else:
                 timeCurrent = (timezoneNUM) - hour_clock
-                update.write(TxtBCHFile + (f"\n\n>>> RECORD OF SCANS <<< \nDate Tracking Record: {datezone}\nTime Tracking Record: {timeCurrent}:{timezoneDate} PM"))
+                update.write(TxtBCHFile + (f"\n\n--- RECORD OF SCANS --- \nDate Tracking Record: {datezone}\nTime Tracking Record: {timeCurrent}:{timezoneDate} PM"))
     return icon;                                                                                # Brings back the variable upon the Font Layout - illustration on the Live Webcam.
 details = "record of scans.txt"
 """
