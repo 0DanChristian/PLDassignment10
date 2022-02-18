@@ -1,0 +1,24 @@
+CONTACT TRACING  -  TOKYO, JAPAN
+
+Personal Information
+    Full Name       : Dan Christian Piﾃｱero
+    Sex / Gender    : Male (M)
+    Age             : 28
+    Birthdate       : December 16, 1994
+    Address         : 303-1069, Izumisawacho, Shiogama-shi, Miyag
+    Phone Number    : +8137-422-2969
+    Email           : danchristian1@gmail.com
+
+Medical Information
+    Weight (in kgs) : 55
+    Height (in cms) : 5'7s
+
+Symptoms
+
+    Fever: 		None
+    Cough: 		None
+    Headache: 	None
+
+--- RECORD OF SCANS --- 
+Date Tracking Record: February 18, 2022
+Time Tracking Record: 4:38 PM
