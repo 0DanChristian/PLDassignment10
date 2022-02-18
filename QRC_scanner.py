@@ -50,3 +50,16 @@ def record_scan(icon):
                 update.write(TxtBCHFile + (f"\n\n>>> RECORD OF SCANS <<< \nDate Tracking Record: {datezone}\nTime Tracking Record: {timeCurrent}:{timezoneDate} PM"))
     return icon;                                                                                # Brings back the variable upon the Font Layout - illustration on the Live Webcam.
 details = "record of scans.txt"
+"""
+DEF FUNCTION FOR A LIVE QRC SCANNER THROUGH WEBCAM DEVICE
+"""
+def webcamExtract():
+    aperture = cv2.VideoCapture(0)                                                              # Acts as an Intermediary Between the Python Progam and the Operating System.
+    unveil = cv2.QRCodeDetector()                                                               # Reads a specific context of data patterns alongside of its pixels.
+    while True:                                                                                 # Loop is used to prevent the unnecesarry closing of Webcam before QR Code is detected and decoded.
+        _, icon = aperture.read()                                                               # Loop is iterated to refresh the command system.
+        data, vrcam, _ = unveil.detectAndDecode(icon)
+        icon = record_scan(cv2.resize(icon, None, fx=1.5, fy=1.5, interpolation = cv2.INTER_LINEAR_EXACT)) # Programmed Font will be displayed between the Live Webcam.
+        cv2.imshow("DAN CHRISTIAN QRC SCANNER", icon)                                           # The Live Webcam Shall Run Together with a Detected QR Code Scanner with its Presented Font Layout alongside of the Stored Input Data.
+        if cv2.waitKey(1) == ord('q'):                                                          # 43 Characters are Present within the first code-block of dictionary line: THE COVID-19 HEALTH MONITOR - CONTACT TRACING FORM
+            break                                                                               # comman that will end the loop
