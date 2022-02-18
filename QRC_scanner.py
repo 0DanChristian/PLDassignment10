@@ -40,7 +40,7 @@ def record_scan(icon):
         current_time = time.localtime()                                                         # The Localtime will be Detected - MANILA, PHL
         timezone = time.strftime("%H:%M", current_time)                                         # HOURS AND MINUTES (e.g. 09:45) with regards to AM and PM
         timezoneNUM = int(time.strftime("%H", current_time))                                    # Disregarding the 24 Hour Clock
-        timezoneDate = time.strftime("%M", current_time)                                           # A Full-Hour Minute (60 Minutes)
+        timezoneDate = time.strftime("%M", current_time)                                        # A Full-Hour Minute (60 Minutes)
         hour_clock = 12
         with open(details, "w", encoding="utf-8") as update:
             if timezoneNUM >= 0 and timezoneNUM < hour_clock:
@@ -63,3 +63,6 @@ def webcamExtract():
         cv2.imshow("DAN CHRISTIAN QRC SCANNER", icon)                                           # The Live Webcam Shall Run Together with a Detected QR Code Scanner with its Presented Font Layout alongside of the Stored Input Data.
         if cv2.waitKey(1) == ord('q'):                                                          # 43 Characters are Present within the first code-block of dictionary line: THE COVID-19 HEALTH MONITOR - CONTACT TRACING FORM
             break                                                                               # comman that will end the loop
+    aperture.release()                                                                          # Operating System will then be informed - Allocated Memory shall despise at any moment.
+    cv2.destroyAllWindows()                                                                     # will automatically close after scanning.
+webcamExtract()                                                                                 # Initializing the overall Python Program.
